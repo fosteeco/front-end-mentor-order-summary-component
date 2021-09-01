@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --mobile-break-point: 375px;
+  --desktop-break-point: 1440px;
+}
+
+body {
+  height: 100vh;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.attribution {
+  position: fixed;
+  margin-bottom: 10px;
+  bottom: 0;
+}
