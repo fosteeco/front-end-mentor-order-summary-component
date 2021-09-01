@@ -10,11 +10,114 @@
   --desktop-break-point: 1440px;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 body {
   height: 100vh;
   background-image: url('./images/pattern-background-desktop.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.card-img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: block;
+  /* vertical-align: middle; */
+  /* Had a ton of issues with space in between the image and corresponding div 
+  https://stackoverflow.com/questions/3947113/space-between-div-and-img */
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-title {
+  text-align: center;
+  margin: 0;
+}
+
+.card-text {
+  color: var(--desaturated-blue);
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.order-description {
+  display: flex;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.change-link {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.link,
+.link:link,
+.link:visited {
+  color: var(--bright-blue);
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.plan-text {
+  font-weight: bold;
+}
+
+.cost {
+  color: var(--desaturated-blue);
+}
+
+.order-img {
+  margin-right: 10px;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.proceed-btn:hover {
+  box-shadow: 0 3px 10px var(--bright-blue);
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: var(--desaturated-blue);
+}
+
+.cancel-btn:hover {
+  color: #000;
+  font-weight: bold;
 }
 
 .attribution {
