@@ -1,5 +1,9 @@
 # Frontend Mentor - Order summary card
 
+Challenge Link:
+
+https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj
+
 Repo Link:
 
 https://github.com/fosteeco/front-end-mentor-order-summary-component
